@@ -1,0 +1,15 @@
+* { margin: 0; padding: 0; box-sizing: border-box; }
+body { font-family: -apple-system, sans-serif; line-height: 1.7; color: #333; background: #f8f9fa; padding: 20px; max-width: 800px; margin: auto; }
+header { background: linear-gradient(135deg, #1a73e8, #1557b0); color: #fff; padding: 40px 20px; border-radius: 8px; text-align: center; }
+header h1 { font-size: 1.8em; margin-bottom: 10px; }
+nav { margin: 20px 0; text-align: center; }
+nav a { margin: 0 10px; color: #1a73e8; text-decoration: none; font-weight: 500; }
+nav a:hover { text-decoration: underline; }
+main { max-width: 650px; margin: 40px auto; }
+.product { background: #fff; padding: 20px; border-radius: 8px; margin: 20px 0; box-shadow: 0 2px 8px rgba(0,0,0,0.06); }
+.product h3 { color: #1a73e8; margin-bottom: 10px; }
+.product a { color: #1a73e8; text-decoration: none; font-weight: 500; }
+.product a:hover { text-decoration: underline; }
+.disclaimer { background: #fff3cd; padding: 10px; border-radius: 6px; margin: 20px 0; font-size: 0.9em; color: #856404; }
+footer { text-align: center; padding: 20px; color: #666; font-size: 0.9em; }
+@media (max-width: 600px) { body { padding: 10px; } }
