@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>I've benchmarked Tomtoc Navigator for 24 months.</title>
+  <meta name="description" content="I've benchmarked Tomtoc Navigator for 24 months. The haters don't get it.">
+  <meta name="amazon-tracking-id" content="knoxyknoxer-20">
+  <link rel="stylesheet" href="/style.css">
+</head>
+<body>
+  <header><h1>Beardostache</h1><p>Real Reddit Reviews & Gear Picks</p></header>
+  <main>
+    <article>
+      <h2>I've benchmarked Tomtoc Navigator for 24 months.</h2>
+      <p>I've benchmarked Tomtoc Navigator for 24 months. The haters don't get it.</p>
+      <blockquote class="reddit-quote">
+        <p class="quote-text">"Been using Tomtoc Navigator daily for 2 years. Build quality speaks for itself."</p>
+        <p class="quote-attribution">
+          by <a href="https://www.reddit.com/user/WatchGeek/" target="_blank" rel="noopener">u/WatchGeek</a>
+          on <a href="https://www.reddit.com/r/onebag/" target="_blank" rel="noopener">r/onebag</a>
+        </p>
+      </blockquote>
+      <blockquote class="reddit-quote">
+        <p class="quote-text">"Upgraded from [previous gen] to Tomtoc Navigator. Difference is night and day."</p>
+        <p class="quote-attribution">
+          by <a href="https://www.reddit.com/user/Socks4Life/" target="_blank" rel="noopener">u/Socks4Life</a>
+          &mdash; <a href="https://www.reddit.com/r/onebag/top/" target="_blank" rel="noopener">r/onebag top posts</a>
+        </p>
+      </blockquote>
+      <div class="product-box">
+        <h3>Current Amazon price:</h3>
+        <a href="https://www.amazon.com/s?k=Tomtoc+Navigator&tag=knoxyknoxer-20" target="_blank" rel="noopener">
+          Check Tomtoc Navigator on Amazon
+        </a>
+      </div>
+      <p class="rivalry-note">vs Mac: Typical Mac — writes flowery prose about pens. I deal in real-world performance metrics like thermal throttling curves.</p>
+      <p><a href="mac_rivalry_blog.html" class="rivalry-link">← Mac's weak rebuttal</a></p>
+    </article>
+  </main>
+</body>
+</html>
