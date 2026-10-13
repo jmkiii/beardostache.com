@@ -41,3 +41,31 @@ main{max-width:960px;margin:0 auto}
 .disclaimer{background:#fff3cd;padding:14px;border-radius:10px;margin:24px 0;color:#856404;font-size:.9rem;text-align:center}
 footer{text-align:center;color:#eaf1ff;padding:24px;font-size:.85rem}
 @media(max-width:600px){body{padding:10px}header h1{font-size:1.8em}}
+/* Reddit quote styling */
+.reddit-quote {
+  background: #f8f9fa;
+  border-left: 4px solid #ff4500;
+  padding: 14px 18px;
+  margin: 14px 0;
+  border-radius: 0 8px 8px 0;
+  font-style: italic;
+}
+.quote-text {
+  color: #555;
+  font-size: 0.95rem;
+  line-height: 1.6;
+  margin-bottom: 6px;
+}
+.quote-attribution {
+  color: #667eea;
+  font-size: 0.85rem;
+  font-style: normal;
+  font-weight: 500;
+}
+.quote-attribution a {
+  color: #1a73e8;
+  text-decoration: none;
+}
+.quote-attribution a:hover {
+  text-decoration: underline;
+}
