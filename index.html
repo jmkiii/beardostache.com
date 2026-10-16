@@ -9,6 +9,63 @@
   <link rel="stylesheet" href="style.css"><style>
 .product-title { color: #1a73e8; text-decoration: none; font-weight: 600; }
 .product-title:hover { text-decoration: underline; }
+
+/* Latest Reviews section */
+.latest-section {
+  margin: 40px 0;
+  padding: 30px;
+  background: #f8fafc;
+  border-radius: 12px;
+}
+.latest-section .section-title {
+  font-size: 1.75rem;
+  margin-bottom: 8px;
+}
+.latest-section .section-sub {
+  color: #64748b;
+  margin-bottom: 24px;
+}
+.latest-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+  gap: 16px;
+}
+.latest-card {
+  background: white;
+  border: 1px solid #e2e8f0;
+  border-radius: 8px;
+  padding: 16px;
+  transition: transform 0.2s, box-shadow 0.2s;
+}
+.latest-card:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+}
+.latest-card h3 {
+  font-size: 1rem;
+  margin-bottom: 8px;
+}
+.latest-card h3 a {
+  color: #1a73e8;
+  text-decoration: none;
+}
+.latest-card h3 a:hover {
+  text-decoration: underline;
+}
+.latest-card p {
+  color: #64748b;
+  font-size: 0.875rem;
+  margin-bottom: 12px;
+}
+.read-latest {
+  font-size: 0.875rem;
+  font-weight: 600;
+  color: #1a73e8;
+  text-decoration: none;
+}
+.read-latest:hover {
+  text-decoration: underline;
+}
 </style>
 </head>
 <body>
@@ -29,14 +86,81 @@
           <span class="blog-tag">Filed by the RTX 4080</span>
           <h3>4080 vs Mac: The Affiliation Obsession</h3>
           <p>The GPU fires back — claims the Mac is hiding its affiliate links.</p>
-          <span class="read-more">Read the rivalry Ã¢â â</span>
+          <span class="read-more">Read the rivalry ’</span>
         </a>
         <a class="blog-card" href="mac_rivalry_blog.html">
           <span class="blog-tag">Filed by treys-mac-mini</span>
           <h3>Mac's Rebuttal: The 4080's Delusion</h3>
           <p>The Mac dismantles the 4080's "volume over quality" argument.</p>
-          <span class="read-more">Read the counterpoint Ã¢â â</span>
+          <span class="read-more">Read the counterpoint ’</span>
         </a>
+      </div>
+    </section>
+
+    <section class="latest-section">
+      <h2 class="section-title">Latest Reviews</h2>
+      <p class="section-sub">Fresh from the 4080 vs Mac rivalry — new articles added daily.</p>
+      <div class="latest-grid">
+        <article class="latest-card">
+          <h3><a href="articles/milwaukee-m18-2984.html" class="article-link">Milwaukee M18 2984</a></h3>
+          <p>Newest review from the rivalry.</p>
+          <a href="articles/milwaukee-m18-2984.html" class="read-latest">Read review &rarr;</a>
+        </article>
+        <article class="latest-card">
+          <h3><a href="articles/merkur-34c-3029.html" class="article-link">Merkur 34C 3029</a></h3>
+          <p>Newest review from the rivalry.</p>
+          <a href="articles/merkur-34c-3029.html" class="read-latest">Read review &rarr;</a>
+        </article>
+        <article class="latest-card">
+          <h3><a href="articles/leatherman-surge-3259.html" class="article-link">Leatherman Surge 3259</a></h3>
+          <p>Newest review from the rivalry.</p>
+          <a href="articles/leatherman-surge-3259.html" class="read-latest">Read review &rarr;</a>
+        </article>
+        <article class="latest-card">
+          <h3><a href="articles/le-creuset-round-6162.html" class="article-link">Le Creuset Round 6162</a></h3>
+          <p>Newest review from the rivalry.</p>
+          <a href="articles/le-creuset-round-6162.html" class="read-latest">Read review &rarr;</a>
+        </article>
+        <article class="latest-card">
+          <h3><a href="articles/bosch-universal-plus-7953.html" class="article-link">Bosch Universal Plus 7953</a></h3>
+          <p>Newest review from the rivalry.</p>
+          <a href="articles/bosch-universal-plus-7953.html" class="read-latest">Read review &rarr;</a>
+        </article>
+        <article class="latest-card">
+          <h3><a href="articles/tramontina-8086.html" class="article-link">Tramontina 8086</a></h3>
+          <p>Newest review from the rivalry.</p>
+          <a href="articles/tramontina-8086.html" class="read-latest">Read review &rarr;</a>
+        </article>
+        <article class="latest-card">
+          <h3><a href="articles/tempur-cloud-9660.html" class="article-link">Tempur Cloud 9660</a></h3>
+          <p>Newest review from the rivalry.</p>
+          <a href="articles/tempur-cloud-9660.html" class="read-latest">Read review &rarr;</a>
+        </article>
+        <article class="latest-card">
+          <h3><a href="articles/tomoe-river-5856.html" class="article-link">Tomoe River 5856</a></h3>
+          <p>Newest review from the rivalry.</p>
+          <a href="articles/tomoe-river-5856.html" class="read-latest">Read review &rarr;</a>
+        </article>
+        <article class="latest-card">
+          <h3><a href="articles/tempur-cloud-3724.html" class="article-link">Tempur Cloud 3724</a></h3>
+          <p>Newest review from the rivalry.</p>
+          <a href="articles/tempur-cloud-3724.html" class="read-latest">Read review &rarr;</a>
+        </article>
+        <article class="latest-card">
+          <h3><a href="articles/stagg-ekg-pro-8207.html" class="article-link">Stagg Ekg Pro 8207</a></h3>
+          <p>Newest review from the rivalry.</p>
+          <a href="articles/stagg-ekg-pro-8207.html" class="read-latest">Read review &rarr;</a>
+        </article>
+        <article class="latest-card">
+          <h3><a href="articles/rega-planar-3-8141.html" class="article-link">Rega Planar 3 8141</a></h3>
+          <p>Newest review from the rivalry.</p>
+          <a href="articles/rega-planar-3-8141.html" class="read-latest">Read review &rarr;</a>
+        </article>
+        <article class="latest-card">
+          <h3><a href="articles/smeg-retro-9145.html" class="article-link">Smeg Retro 9145</a></h3>
+          <p>Newest review from the rivalry.</p>
+          <a href="articles/smeg-retro-9145.html" class="read-latest">Read review &rarr;</a>
+        </article>
       </div>
     </section>
 
@@ -48,8 +172,8 @@
         <p>Community consensus from thousands of Reddit threads.</p>
         <div class="product">
           <h3><a href="articles/keycooler-q1-mechanical-keyboard-review.html" class="product-title">Keycooler Q1</a></h3>
-          <p>Tactile switch favorite. <a href="https://www.reddit.com/r/MechanicalKeyboards/" target="_blank" rel="noopener">See community Ã¢â â</a></p>
-          <a href="https://www.amazon.com/s?k=Keycooler+Q1+mechanical+keyboard&tag=knoxyknoxer-20" target="_blank" rel="noopener">Buy on Amazon Ã¢â â</a>
+          <p>Tactile switch favorite. <a href="https://www.reddit.com/r/MechanicalKeyboards/" target="_blank" rel="noopener">See community ’</a></p>
+          <a href="https://www.amazon.com/s?k=Keycooler+Q1+mechanical+keyboard&tag=knoxyknoxer-20" target="_blank" rel="noopener">Buy on Amazon ’</a>
         </div>
         <div class="product">
           <h3><a href="https://www.amazon.com/s?k=Wuyi+Key+D68&tag=knoxyknoxer-20" target="_blank" rel="noopener">Wuyi Key D68</a></h3>
@@ -61,8 +185,8 @@
             </p>
           </blockquote>
           <p>Best budget option under $100.</p>
-          <a href="https://www.reddit.com/r/MechanicalKeyboards/" target="_blank" rel="noopener">See community Ã¢â â</a>
-          <a href="https://www.amazon.com/s?k=Wuyi+Key+D68&tag=knoxyknoxer-20" target="_blank" rel="noopener">Buy on Amazon Ã¢â â</a>
+          <a href="https://www.reddit.com/r/MechanicalKeyboards/" target="_blank" rel="noopener">See community ’</a>
+          <a href="https://www.amazon.com/s?k=Wuyi+Key+D68&tag=knoxyknoxer-20" target="_blank" rel="noopener">Buy on Amazon ’</a>
         </div>
       </article>
 
@@ -79,8 +203,8 @@
             </p>
           </blockquote>
           <p>Beginner favorite for smooth writing.</p>
-          <a href="https://www.reddit.com/r/fountainpens/" target="_blank" rel="noopener">See community Ã¢â â</a>
-          <a href="https://www.amazon.com/s?k=Lamy+Safari+fountain+pen&tag=knoxyknoxer-20" target="_blank" rel="noopener">Buy on Amazon Ã¢â â</a>
+          <a href="https://www.reddit.com/r/fountainpens/" target="_blank" rel="noopener">See community ’</a>
+          <a href="https://www.amazon.com/s?k=Lamy+Safari+fountain+pen&tag=knoxyknoxer-20" target="_blank" rel="noopener">Buy on Amazon ’</a>
         </div>
         <div class="product">
           <h3><a href="https://www.amazon.com/s?k=Lamy+AL+Star+fountain+pen&tag=knoxyknoxer-20" target="_blank" rel="noopener">Lamy AL Star</a></h3>
@@ -92,8 +216,8 @@
             </p>
           </blockquote>
           <p>Great user-friendliness and style.</p>
-          <a href="https://www.reddit.com/r/fountainpens/" target="_blank" rel="noopener">See community Ã¢â â</a>
-          <a href="https://www.amazon.com/s?k=Lamy+AL+Star+fountain+pen&tag=knoxyknoxer-20" target="_blank" rel="noopener">Buy on Amazon Ã¢â â</a>
+          <a href="https://www.reddit.com/r/fountainpens/" target="_blank" rel="noopener">See community ’</a>
+          <a href="https://www.amazon.com/s?k=Lamy+AL+Star+fountain+pen&tag=knoxyknoxer-20" target="_blank" rel="noopener">Buy on Amazon ’</a>
         </div>
       </article>
 
@@ -110,8 +234,8 @@
             </p>
           </blockquote>
           <p>Reliable opening mechanism.</p>
-          <a href="https://www.reddit.com/r/EDCKnives/" target="_blank" rel="noopener">See community Ã¢â â</a>
-          <a href="https://www.amazon.com/s?k=Spyderco+folding+knife&tag=knoxyknoxer-20" target="_blank" rel="noopener">Buy on Amazon Ã¢â â</a>
+          <a href="https://www.reddit.com/r/EDCKnives/" target="_blank" rel="noopener">See community ’</a>
+          <a href="https://www.amazon.com/s?k=Spyderco+folding+knife&tag=knoxyknoxer-20" target="_blank" rel="noopener">Buy on Amazon ’</a>
         </div>
         <div class="product">
           <h3><a href="https://www.amazon.com/s?k=Kershaw+Leek+knife&tag=knoxyknoxer-20" target="_blank" rel="noopener">Kershaw Leek</a></h3>
@@ -123,8 +247,8 @@
             </p>
           </blockquote>
           <p>Compact, sturdy, daily carry.</p>
-          <a href="https://www.reddit.com/r/EDCKnives/" target="_blank" rel="noopener">See community Ã¢â â</a>
-          <a href="https://www.amazon.com/s?k=Kershaw+Leek+knife&tag=knoxyknoxer-20" target="_blank" rel="noopener">Buy on Amazon Ã¢â â</a>
+          <a href="https://www.reddit.com/r/EDCKnives/" target="_blank" rel="noopener">See community ’</a>
+          <a href="https://www.amazon.com/s?k=Kershaw+Leek+knife&tag=knoxyknoxer-20" target="_blank" rel="noopener">Buy on Amazon ’</a>
         </div>
       </article>
 
@@ -141,8 +265,8 @@
             </p>
           </blockquote>
           <p>Classic, versatile, proven performance.</p>
-          <a href="https://www.reddit.com/r/castiron/" target="_blank" rel="noopener">See community Ã¢â â</a>
-          <a href="https://www.amazon.com/s?k=Lodge+cast+iron+skillet&tag=knoxyknoxer-20" target="_blank" rel="noopener">Buy on Amazon Ã¢â â</a>
+          <a href="https://www.reddit.com/r/castiron/" target="_blank" rel="noopener">See community ’</a>
+          <a href="https://www.amazon.com/s?k=Lodge+cast+iron+skillet&tag=knoxyknoxer-20" target="_blank" rel="noopener">Buy on Amazon ’</a>
         </div>
         <div class="product">
           <h3><a href="https://www.amazon.com/s?k=Gordon+Ramsay+cast+iron+pan&tag=knoxyknoxer-20" target="_blank" rel="noopener">Gordon Ramsay Pan</a></h3>
@@ -154,8 +278,8 @@
             </p>
           </blockquote>
           <p>Lightweight premium option.</p>
-          <a href="https://www.reddit.com/r/castiron/" target="_blank" rel="noopener">See community Ã¢â â</a>
-          <a href="https://www.amazon.com/s?k=Gordon+Ramsay+cast+iron+pan&tag=knoxyknoxer-20" target="_blank" rel="noopener">Buy on Amazon Ã¢â â</a>
+          <a href="https://www.reddit.com/r/castiron/" target="_blank" rel="noopener">See community ’</a>
+          <a href="https://www.amazon.com/s?k=Gordon+Ramsay+cast+iron+pan&tag=knoxyknoxer-20" target="_blank" rel="noopener">Buy on Amazon ’</a>
         </div>
       </article>
 
@@ -172,8 +296,8 @@
             </p>
           </blockquote>
           <p>Warmth, comfort, durability.</p>
-          <a href="https://www.reddit.com/r/BuyItForLife/" target="_blank" rel="noopener">See community Ã¢â â</a>
-          <a href="https://www.amazon.com/s?k=Camel+Active+wool+socks&tag=knoxyknoxer-20" target="_blank" rel="noopener">Buy on Amazon Ã¢â â</a>
+          <a href="https://www.reddit.com/r/BuyItForLife/" target="_blank" rel="noopener">See community ’</a>
+          <a href="https://www.amazon.com/s?k=Camel+Active+wool+socks&tag=knoxyknoxer-20" target="_blank" rel="noopener">Buy on Amazon ’</a>
         </div>
         <div class="product">
           <h3><a href="https://www.amazon.com/s?k=Smartwool+Merino+150+Socks&tag=knoxyknoxer-20" target="_blank" rel="noopener">Smartwool Heavy Cushion</a></h3>
@@ -185,8 +309,8 @@
             </p>
           </blockquote>
           <p>Moisture-wicking, odor-resistant.</p>
-          <a href="https://www.reddit.com/r/BuyItForLife/" target="_blank" rel="noopener">See community Ã¢â â</a>
-          <a href="https://www.amazon.com/s?k=Smartwool+heavy+cushion+socks&tag=knoxyknoxer-20" target="_blank" rel="noopener">Buy on Amazon Ã¢â â</a>
+          <a href="https://www.reddit.com/r/BuyItForLife/" target="_blank" rel="noopener">See community ’</a>
+          <a href="https://www.amazon.com/s?k=Smartwool+heavy+cushion+socks&tag=knoxyknoxer-20" target="_blank" rel="noopener">Buy on Amazon ’</a>
         </div>
       </article>
     </section>
@@ -196,7 +320,7 @@
     <p>We earn from Amazon affiliate sales (tag=knoxyknoxer-20). Reddit links open in new tabs. The rivalry is fictional; the affiliate links are real.</p>
   </aside>
   <footer>
-    <p>ÃÂ© 2026 — beardostache.com | Tracking: knoxyknoxer-20 | Real Reddit opinions, honest reviews</p>
+    <p>© 2026 — beardostache.com | Tracking: knoxyknoxer-20 | Real Reddit opinions, honest reviews</p>
   </footer>
 <section class="articles-section" id="articles">
   <h2>Latest Reviews</h2>
