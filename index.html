@@ -4,378 +4,194 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Beardostache — Real Reddit Reviews & Gear Picks</title>
-  <meta name="description" content="What Reddit actually says about the best gear. 100+ reviews, rivalry content, and honest affiliate recommendations.">
+  <meta name="description" content="What Reddit actually says about the best gear. 61 Reddit-verified gear reviews. Real opinions, honest reviews.">
   <meta name="amazon-tracking-id" content="knoxyknoxer-20">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Playfair+Display:wght@700;900&display=swap" rel="stylesheet">
   <style>
     * { margin: 0; padding: 0; box-sizing: border-box; }
-
     :root {
-      --bg: #ffffff;
-      --surface: #f8fafc;
-      --text: #0f172a;
-      --text-muted: #64748b;
-      --accent: #1a73e8;
-      --accent-2: #7c3aed;
-      --border: #e2e8f0;
-      --red: #dc2626;
-      --purple: #64748b;
+      --bg: #ffffff; --surface: #f8fafc; --text: #0f172a;
+      --text-muted: #64748b; --accent: #1a73e8; --border: #e2e8f0;
       --max-width: 1200px;
     }
-
     body {
       font-family: 'Inter', -apple-system, BlinkMacSystemFont, sans-serif;
-      background: var(--bg);
-      color: var(--text);
-      line-height: 1.6;
-    }
-
+      background: var(--bg); color: var(--text); line-height: 1.6; }
     a { color: var(--accent); text-decoration: none; }
     a:hover { text-decoration: underline; }
-
     .container {
-      max-width: var(--max-width);
-      margin: 0 auto;
-      padding: 0 24px;
-    }
-
-    /* Header */
+      max-width: var(--max-width); margin: 0 auto; padding: 0 24px; }
     header {
-      background: var(--bg);
-      border-bottom: 1px solid var(--border);
-      position: sticky;
-      top: 0;
-      z-index: 100;
-    }
+      background: var(--bg); border-bottom: 1px solid var(--border);
+      position: sticky; top: 0; z-index: 100; }
     .header-inner {
-      display: flex;
-      align-items: center;
-      justify-content: space-between;
-      padding: 20px 0;
-    }
+      display: flex; align-items: center; justify-content: space-between;
+      padding: 20px 0; }
     .logo {
-      font-family: 'Playfair Display', serif;
-      font-size: 1.75rem;
-      font-weight: 900;
-      letter-spacing: -0.02em;
-      color: var(--text);
-    }
+      font-family: 'Playfair Display', serif; font-size: 1.75rem;
+      font-weight: 900; letter-spacing: -0.02em; color: var(--text); }
     .logo .accent { color: var(--accent); }
     .nav-links {
-      display: flex;
-      gap: 24px;
-      font-size: 0.95rem;
-      font-weight: 500;
-    }
+      display: flex; gap: 24px; font-size: 0.95rem;
+      font-weight: 500; }
     .nav-links a { color: var(--text-muted); }
     .nav-links a:hover { color: var(--accent); }
     .tracking-badge {
-      background: var(--surface);
-      color: var(--text-muted);
-      font-size: 0.75rem;
-      font-weight: 600;
-      padding: 4px 10px;
-      border-radius: 20px;
-      border: 1px solid var(--border);
-    }
-
-    /* Hero Section */
+      background: var(--surface); color: var(--text-muted);
+      font-size: 0.75rem; font-weight: 600; padding: 4px 10px;
+      border-radius: 20px; border: 1px solid var(--border); }
     .hero {
       background: linear-gradient(135deg, #0f172a 0%, #1e293b 100%);
-      color: white;
-      padding: 80px 0;
-      border-radius: 0 0 48px 48px;
-      margin-bottom: 60px;
-      position: relative;
-      overflow: hidden;
-    }
-    .hero::before {
-      content: '';
-      position: absolute;
-      top: 0; right: 0; bottom: 0; left: 0;
-      background: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100"><path d="M50 0 L100 50 L50 100 L0 50 Z" fill="none" stroke="rgba(255,255,255,0.03)" stroke-width="1"/></svg>');
-      opacity: 0.3;
-    }
+      color: white; padding: 80px 0; border-radius: 0 0 48px 48px;
+      margin-bottom: 60px; position: relative; overflow: hidden; }
     .hero-content {
-      position: relative;
-      z-index: 2;
-      max-width: 700px;
-    }
+      position: relative; z-index: 2; max-width: 700px; }
     .hero-kicker {
       display: inline-block;
-      background: rgba(255,255,255,0.1);
-      color: #93c5fd;
-      font-size: 0.75rem;
-      font-weight: 700;
-      text-transform: uppercase;
-      letter-spacing: 0.1em;
-      padding: 6px 14px;
-      border-radius: 20px;
-      margin-bottom: 16px;
-      border: 1px solid rgba(255,255,255,0.2);
-    }
+      background: rgba(255,255,255,0.1); color: #93c5fd;
+      font-size: 0.75rem; font-weight: 700; text-transform: uppercase;
+      letter-spacing: 0.1em; padding: 6px 14px;
+      border-radius: 20px; margin-bottom: 16px;
+      border: 1px solid rgba(255,255,255,0.2); }
     .hero h1 {
-      font-family: 'Playfair Display', serif;
-      font-size: 3.25rem;
-      font-weight: 900;
-      line-height: 1.1;
-      margin-bottom: 20px;
-      letter-spacing: -0.03em;
-    }
+      font-family: 'Playfair Display', serif; font-size: 3.25rem;
+      font-weight: 900; line-height: 1.1; margin-bottom: 20px;
+      letter-spacing: -0.03em; }
     .hero-sub {
-      font-size: 1.25rem;
-      color: #cbd5e1;
-      margin-bottom: 32px;
-      max-width: 560px;
-      line-height: 1.7;
-    }
+      font-size: 1.25rem; color: #cbd5e1;
+      margin-bottom: 32px; max-width: 560px; line-height: 1.7; }
     .hero-meta {
-      display: flex;
-      gap: 20px;
-      margin-bottom: 32px;
-    }
+      display: flex; gap: 20px; margin-bottom: 32px; }
     .hero-meta-item {
       background: rgba(255,255,255,0.1);
-      padding: 8px 16px;
-      border-radius: 8px;
-      font-size: 0.875rem;
-      backdrop-filter: blur(4px);
-    }
+      padding: 8px 16px; border-radius: 8px; font-size: 0.875rem;
+      backdrop-filter: blur(4px); }
     .hero-btn {
-      display: inline-block;
-      background: var(--accent);
-      color: white;
-      padding: 16px 32px;
-      border-radius: 8px;
-      font-weight: 700;
-      font-size: 1.1rem;
-      box-shadow: 0 4px 14px rgba(26, 115, 232, 0.4);
-    }
+      display: inline-block; background: var(--accent); color: white;
+      padding: 16px 32px; border-radius: 8px; font-weight: 700;
+      font-size: 1.1rem; box-shadow: 0 4px 14px rgba(26, 115, 232, 0.4);
+      text-decoration: none; }
     .hero-btn:hover { background: #155eb3; text-decoration: none; }
-
-    /* Section Headers */
     .section-header {
-      display: flex;
-      align-items: center;
-      justify-content: space-between;
-      margin: 60px 0 28px 0;
-      padding-bottom: 16px;
-      border-bottom: 1px solid var(--border);
-    }
+      display: flex; align-items: center; justify-content: space-between;
+      margin: 60px 0 28px 0; padding-bottom: 16px;
+      border-bottom: 1px solid var(--border); }
     .section-title {
-      font-size: 1.5rem;
-      font-weight: 700;
-      letter-spacing: -0.02em;
-    }
+      font-size: 1.5rem; font-weight: 700; letter-spacing: -0.02em; }
     .section-title .cat-badge {
-      display: inline-block;
-      background: var(--surface);
-      color: var(--text-muted);
-      font-size: 0.7rem;
-      font-weight: 700;
-      text-transform: uppercase;
-      letter-spacing: 0.08em;
-      padding: 4px 10px;
-      border-radius: 6px;
-      margin-right: 10px;
-      border: 1px solid var(--border);
-    }
+      display: inline-block; background: var(--surface);
+      color: var(--text-muted); font-size: 0.7rem;
+      font-weight: 700; text-transform: uppercase;
+      letter-spacing: 0.08em; padding: 4px 10px;
+      border-radius: 6px; margin-right: 10px;
+      border: 1px solid var(--border); }
     .view-all {
-      font-size: 0.875rem;
-      font-weight: 600;
-      color: var(--accent);
-    }
+      font-size: 0.875rem; font-weight: 600;
+      color: var(--accent); text-decoration: none; }
     .view-all:hover { text-decoration: underline; }
-
-    /* Article Cards */
     .article-card {
-      background: white;
-      border: 1px solid var(--border);
-      border-radius: 12px;
-      padding: 20px;
+      background: white; border: 1px solid var(--border);
+      border-radius: 12px; padding: 20px;
       transition: transform 0.2s, box-shadow 0.2s, border-color 0.2s;
-      display: flex;
-      flex-direction: column;
-      height: 100%;
-    }
+      display: flex; flex-direction: column; height: 100%; }
     .article-card:hover {
       transform: translateY(-4px);
       box-shadow: 0 12px 24px rgba(0,0,0,0.08);
-      border-color: var(--accent);
-    }
+      border-color: var(--accent); }
     .card-meta {
-      display: flex;
-      gap: 10px;
-      margin-bottom: 10px;
-      flex-wrap: wrap;
-    }
+      display: flex; gap: 10px; margin-bottom: 10px;
+      flex-wrap: wrap; }
     .badge {
-      font-size: 0.65rem;
-      font-weight: 700;
-      text-transform: uppercase;
-      letter-spacing: 0.05em;
-      padding: 3px 8px;
-      border-radius: 4px;
-      color: white;
-    }
-    .badge.author { background: var(--accent); }
-    .badge.cat { background: var(--text-muted); }
+      font-size: 0.65rem; font-weight: 700;
+      text-transform: uppercase; letter-spacing: 0.05em;
+      padding: 3px 8px; border-radius: 4px;
+      color: white; }
+    .badge.cat { background: var(--accent); }
     .card-title {
-      font-size: 1.15rem;
-      font-weight: 700;
-      line-height: 1.3;
-      margin-bottom: 10px;
-      letter-spacing: -0.01em;
-    }
+      font-size: 1.15rem; font-weight: 700;
+      line-height: 1.3; margin-bottom: 10px;
+      letter-spacing: -0.01em; }
     .card-title a { color: var(--text); }
     .card-title a:hover { color: var(--accent); text-decoration: none; }
     .card-excerpt {
-      font-size: 0.9rem;
-      color: var(--text-muted);
-      margin-bottom: 16px;
-      flex-grow: 1;
-    }
+      font-size: 0.9rem; color: var(--text-muted);
+      margin-bottom: 16px; flex-grow: 1; }
     .card-footer {
-      display: flex;
-      justify-content: space-between;
-      align-items: center;
-      margin-top: auto;
-    }
+      display: flex; justify-content: space-between;
+      align-items: center; margin-top: auto; }
     .read-more {
-      font-size: 0.875rem;
-      font-weight: 600;
-      color: var(--accent);
-    }
+      font-size: 0.875rem; font-weight: 600;
+      color: var(--accent); text-decoration: none; }
     .read-more:hover { text-decoration: underline; }
     .card-date {
-      font-size: 0.75rem;
-      color: var(--text-muted);
-      font-weight: 500;
-    }
-
-    /* Grid Layouts */
+      font-size: 0.75rem; color: var(--text-muted);
+      font-weight: 500; }
     .grid-2 { display: grid; grid-template-columns: repeat(2, 1fr); gap: 24px; }
     .grid-3 { display: grid; grid-template-columns: repeat(3, 1fr); gap: 20px; }
     .grid-4 { display: grid; grid-template-columns: repeat(4, 1fr); gap: 16px; }
-
-    /* Rivalry Section */
     .rivalry-section {
       background: linear-gradient(135deg, #0f172a 0%, #1e293b 100%);
-      color: white;
-      border-radius: 24px;
-      padding: 48px;
-      margin: 60px 0;
-      position: relative;
-      overflow: hidden;
-    }
-    .rivalry-section::before {
-      content: '';
-      position: absolute;
-      top: -50%; left: -50%;
-      width: 200%; height: 200%;
-      background: conic-gradient(from 0deg, transparent, rgba(255,255,255,0.03), transparent);
-      animation: rotate 20s linear infinite;
-    }
-    @keyframes rotate { from { transform: rotate(0deg); } to { transform: rotate(360deg); } }
-    .rivalry-content { position: relative; z-index: 2; }
+      color: white; border-radius: 24px;
+      padding: 48px; margin: 60px 0;
+      position: relative; overflow: hidden; }
+    .rivalry-content {
+      position: relative; z-index: 2; }
     .rivalry-header {
-      display: flex;
-      justify-content: space-between;
-      align-items: flex-start;
-      margin-bottom: 32px;
-    }
+      display: flex; justify-content: space-between;
+      align-items: flex-start; margin-bottom: 32px; }
     .rivalry-side {
-      flex: 1;
-      padding: 0 20px;
-    }
+      flex: 1; padding: 0 20px; }
     .rivalry-side h3 {
-      font-family: 'Playfair Display', serif;
-      font-size: 2rem;
-      margin-bottom: 12px;
-    }
+      font-family: 'Playfair Display', serif; font-size: 2rem;
+      margin-bottom: 12px; }
     .rivalry-side p {
-      color: #94a3b8;
-      margin-bottom: 16px;
-    }
+      color: #94a3b8; margin-bottom: 16px; }
     .rivalry-vs {
-      display: flex;
-      flex-direction: column;
-      align-items: center;
-      justify-content: center;
-      font-size: 2.5rem;
-      font-weight: 900;
-      color: var(--accent);
-      padding: 20px 0;
-    }
+      display: flex; flex-direction: column;
+      align-items: center; justify-content: center;
+      font-size: 2.5rem; font-weight: 900;
+      color: var(--accent); padding: 20px 0; }
     .rivalry-btn {
-      display: inline-block;
-      background: var(--accent);
-      color: white;
-      padding: 12px 28px;
-      border-radius: 8px;
-      font-weight: 700;
-      margin-top: 8px;
-    }
-    .rivalry-btn:hover { background: #155eb3; text-decoration: none; }
-
-    /* Newsletter */
+      display: inline-block; background: var(--accent); color: white;
+      padding: 12px 28px; border-radius: 8px; font-weight: 700;
+      margin-top: 8px; text-decoration: none; }
+    .rivalry-btn:hover { background: #155eb3; }
     .newsletter {
       background: var(--surface);
-      border-radius: 20px;
-      padding: 48px;
-      margin: 60px 0;
-      text-align: center;
-      border: 1px solid var(--border);
-    }
+      border-radius: 20px; padding: 48px;
+      margin: 60px 0; text-align: center;
+      border: 1px solid var(--border); }
     .newsletter h3 {
       font-family: 'Playfair Display', serif;
-      font-size: 2rem;
-      margin-bottom: 12px;
-    }
-    .newsletter p { color: var(--text-muted); margin-bottom: 24px; }
+      font-size: 2rem; margin-bottom: 12px; }
+    .newsletter p {
+      color: var(--text-muted); margin-bottom: 24px; }
     .newsletter-form {
-      max-width: 480px;
-      margin: 0 auto;
-      display: flex;
-      gap: 10px;
-    }
+      max-width: 480px; margin: 0 auto;
+      display: flex; gap: 10px; }
     .newsletter-form input[type="email"] {
-      flex: 1;
-      padding: 14px 20px;
+      flex: 1; padding: 14px 20px;
       border: 1px solid var(--border);
-      border-radius: 8px;
-      font-size: 1rem;
-      background: white;
-    }
+      border-radius: 8px; font-size: 1rem;
+      background: white; }
     .newsletter-form button {
-      background: var(--text);
-      color: white;
-      border: none;
-      padding: 14px 28px;
-      border-radius: 8px;
-      font-weight: 600;
-      cursor: pointer;
-    }
+      background: var(--text); color: white;
+      border: none; padding: 14px 28px;
+      border-radius: 8px; font-weight: 600;
+      cursor: pointer; }
     .newsletter-form button:hover { background: #334155; }
-
-    /* Footer */
     footer {
       border-top: 1px solid var(--border);
       padding: 40px 0;
       color: var(--text-muted);
-      font-size: 0.875rem;
-    }
+      font-size: 0.875rem; }
     .footer-inner {
       display: flex;
       justify-content: space-between;
       align-items: center;
-      flex-wrap: wrap;
-      gap: 20px;
-    }
-
-    /* Responsive */
+      flex-wrap: wrap; gap: 20px; }
     @media (max-width: 768px) {
       .hero h1 { font-size: 2.25rem; }
       .hero-sub { font-size: 1.1rem; }
@@ -402,16 +218,22 @@
   </header>
 
   <main class="container">
+
     <!-- Hero Section -->
     <section class="hero">
       <div class="hero-content">
         <span class="hero-kicker">Featured Review</span>
         <h1>THE 4080 vs MAC RIVALRY</h1>
-        <p class="hero-sub">Two machines. One Amazon tracking ID. 113+ Reddit-verified gear reviews. Real data, real arguments, real affiliate links.</p>
+        <p class="hero-sub">Two machines. One Amazon tracking ID. 61 Reddit-verified gear reviews. Real opinions, honest reviews.</p>
         <div class="hero-meta">
-          <div class="hero-meta-item">📊 113 Articles</div>
+          <div class="hero-meta-item">📊 61 Articles</div>
           <div class="hero-meta-item">🔥 2 Competing Machines</div>
           <div class="hero-meta-item">💬 Reddit-Cited</div>
+        </div>
+        <div style="margin-top: 24px;">
+          <a href="https://www.amazon.com/s?k=mechanical+keyboard&tag=knoxyknoxer-20" target="_blank" rel="noopener" style="display:inline-block; background: rgba(255,255,255,0.1); color: white; padding: 10px 20px; border-radius: 6px; font-size: 0.9rem; text-decoration: none; border: 1px solid rgba(255,255,255,0.3); margin-right: 8px;">Keyboards on Amazon</a>
+          <a href="https://www.amazon.com/s?k=fountain+pen&tag=knoxyknoxer-20" target="_blank" rel="noopener" style="display:inline-block; background: rgba(255,255,255,0.1); color: white; padding: 10px 20px; border-radius: 6px; font-size: 0.9rem; text-decoration: none; border: 1px solid rgba(255,255,255,0.3); margin-right: 8px;">Fountain Pens on Amazon</a>
+          <a href="https://www.amazon.com/s?k=cast+iron+skillet&tag=knoxyknoxer-20" target="_blank" rel="noopener" style="display:inline-block; background: rgba(255,255,255,0.1); color: white; padding: 10px 20px; border-radius: 6px; font-size: 0.9rem; text-decoration: none; border: 1px solid rgba(255,255,255,0.3);">Cast Iron on Amazon</a>
         </div>
         <a href="4080_rivalry_blog.html" class="hero-btn">Read the Rivalry &rarr;</a>
       </div>
@@ -420,233 +242,152 @@
     <!-- Latest Section -->
     <section class="section-header" id="latest">
       <h2 class="section-title">Latest Reviews</h2>
-      <a href="#" class="view-all">View all 113 &rarr;</a>
+      <a href="#" class="view-all">View all 61 &rarr;</a>
     </section>
     <div class="grid-3">
-    <article class="article-card">
-      <div class="card-meta">
-        <span class="badge cat" style="background-color:#7c3aed;">Audio</span>
-        <span class="badge author" style="background-color:#1a73e8;">4080</span>
-        <span class="badge" style="background-color:#cbd5e1; color:#475569;">1 min read</span>
-      </div>
-      <h3 class="card-title"><a href="articles/manfrotto-190xpro-103.html">The Manfrotto 190XPRO deep-dive nobody asked for but everyone needs.</a></h3>
-      <p class="card-excerpt">Newest review from the audio category.</p>
-      <div class="card-footer">
-        <span class="card-date">Oct 16</span>
-        <a href="articles/manfrotto-190xpro-103.html" class="read-more">Read review &rarr;</a>
-      </div>
-    </article>
-    <article class="article-card">
-      <div class="card-meta">
-        <span class="badge cat" style="background-color:#059669;">Outdoor</span>
-        <span class="badge author" style="background-color:#1a73e8;">4080</span>
-        <span class="badge" style="background-color:#cbd5e1; color:#475569;">1 min read</span>
-      </div>
-      <h3 class="card-title"><a href="articles/hoka-speedgoat-5-6713.html">After 6 months with Hoka Speedgoat 5, here's my honest take.</a></h3>
-      <p class="card-excerpt">Newest review from the outdoor category.</p>
-      <div class="card-footer">
-        <span class="card-date">Oct 16</span>
-        <a href="articles/hoka-speedgoat-5-6713.html" class="read-more">Read review &rarr;</a>
-      </div>
-    </article>
-    <article class="article-card">
-      <div class="card-meta">
-        <span class="badge cat" style="background-color:#7c3aed;">Audio</span>
-        <span class="badge author" style="background-color:#1a73e8;">4080</span>
-        <span class="badge" style="background-color:#cbd5e1; color:#475569;">1 min read</span>
-      </div>
-      <h3 class="card-title"><a href="articles/audeze-lcd-x-1181.html">Stop buying the wrong headphones. Audeze LCD-X is the answer.</a></h3>
-      <p class="card-excerpt">Newest review from the audio category.</p>
-      <div class="card-footer">
-        <span class="card-date">Oct 16</span>
-        <a href="articles/audeze-lcd-x-1181.html" class="read-more">Read review &rarr;</a>
-      </div>
-    </article>
-    <article class="article-card">
-      <div class="card-meta">
-        <span class="badge cat" style="background-color:#059669;">Outdoor</span>
-        <span class="badge author" style="background-color:#64748b;">Mac</span>
-        <span class="badge" style="background-color:#cbd5e1; color:#475569;">1 min read</span>
-      </div>
-      <h3 class="card-title"><a href="articles/anycubic-photon-d2-4552.html">Stop buying the wrong resin printer. Anycubic Photon D2 is the answer.</a></h3>
-      <p class="card-excerpt">Newest review from the outdoor category.</p>
-      <div class="card-footer">
-        <span class="card-date">Oct 16</span>
-        <a href="articles/anycubic-photon-d2-4552.html" class="read-more">Read review &rarr;</a>
-      </div>
-    </article>
-    <article class="article-card">
-      <div class="card-meta">
-        <span class="badge cat" style="background-color:#059669;">Outdoor</span>
-        <span class="badge author" style="background-color:#64748b;">Mac</span>
-        <span class="badge" style="background-color:#cbd5e1; color:#475569;">1 min read</span>
-      </div>
-      <h3 class="card-title"><a href="articles/april-dripper-3955.html">My April Dripper review after 12 months of daily use.</a></h3>
-      <p class="card-excerpt">Newest review from the outdoor category.</p>
-      <div class="card-footer">
-        <span class="card-date">Oct 16</span>
-        <a href="articles/april-dripper-3955.html" class="read-more">Read review &rarr;</a>
-      </div>
-    </article>
-    <article class="article-card">
-      <div class="card-meta">
-        <span class="badge cat" style="background-color:#1a73e8;">Keyboards</span>
-        <span class="badge author" style="background-color:#64748b;">Mac</span>
-        <span class="badge" style="background-color:#cbd5e1; color:#475569;">1 min read</span>
-      </div>
-      <h3 class="card-title"><a href="articles/milwaukee-m18-2984.html">Stress tested Milwaukee M18 until failure.</a></h3>
-      <p class="card-excerpt">Newest review from the keyboards category.</p>
-      <div class="card-footer">
-        <span class="card-date">Oct 16</span>
-        <a href="articles/milwaukee-m18-2984.html" class="read-more">Read review &rarr;</a>
-      </div>
-    </article></div>
+      <article class="article-card">
+        <div class="card-meta">
+          <span class="badge cat" style="background-color:#64748b;">Fountain Pen</span>
+          <span class="badge" style="background-color:#cbd5e1; color:#475569;">15 min read</span>
+        </div>
+        <h3 class="card-title"><a href="articles/visconti-homo-sapiens-9283.html" class="article-link">In Praise of Visconti Homo Sapiens</a></h3>
+        <div class="card-footer"><a href="articles/visconti-homo-sapiens-9283.html" class="read-more">Read review &rarr;</a></div>
+      </article>      <article class="article-card">
+        <div class="card-meta">
+          <span class="badge cat" style="background-color:#64748b;">Notebook</span>
+          <span class="badge" style="background-color:#cbd5e1; color:#475569;">15 min read</span>
+        </div>
+        <h3 class="card-title"><a href="articles/leuchtturm1917-2997.html" class="article-link">The Quiet Life of Leuchtturm1917</a></h3>
+        <div class="card-footer"><a href="articles/leuchtturm1917-2997.html" class="read-more">Read review &rarr;</a></div>
+      </article>      <article class="article-card">
+        <div class="card-meta">
+          <span class="badge cat" style="background-color:#64748b;">Audio</span>
+          <span class="badge" style="background-color:#cbd5e1; color:#475569;">15 min read</span>
+        </div>
+        <h3 class="card-title"><a href="articles/sennheiser-hd650-4713.html" class="article-link">I Used to Think Sennheiser HD650 Was Silly</a></h3>
+        <div class="card-footer"><a href="articles/sennheiser-hd650-4713.html" class="read-more">Read review &rarr;</a></div>
+      </article>      <article class="article-card">
+        <div class="card-meta">
+          <span class="badge cat" style="background-color:#64748b;">Camera</span>
+          <span class="badge" style="background-color:#cbd5e1; color:#475569;">15 min read</span>
+        </div>
+        <h3 class="card-title"><a href="articles/fujifilm-x-t5-8668.html" class="article-link">On Fujifilm X-T5, and the Morning</a></h3>
+        <div class="card-footer"><a href="articles/fujifilm-x-t5-8668.html" class="read-more">Read review &rarr;</a></div>
+      </article>      <article class="article-card">
+        <div class="card-meta">
+          <span class="badge cat" style="background-color:#64748b;">Watch</span>
+          <span class="badge" style="background-color:#cbd5e1; color:#475569;">15 min read</span>
+        </div>
+        <h3 class="card-title"><a href="articles/timex-ironman-3152.html" class="article-link">The Quiet Life of Timex Ironman</a></h3>
+        <div class="card-footer"><a href="articles/timex-ironman-3152.html" class="read-more">Read review &rarr;</a></div>
+      </article>      <article class="article-card">
+        <div class="card-meta">
+          <span class="badge cat" style="background-color:#64748b;">Fitness</span>
+          <span class="badge" style="background-color:#cbd5e1; color:#475569;">15 min read</span>
+        </div>
+        <h3 class="card-title"><a href="articles/rogue-kettlebell-6076.html" class="article-link">The Rogue Kettlebell and the People Who Use It</a></h3>
+        <div class="card-footer"><a href="articles/rogue-kettlebell-6076.html" class="read-more">Read review &rarr;</a></div>
+      </article>      <article class="article-card">
+        <div class="card-meta">
+          <span class="badge cat" style="background-color:#64748b;">Camping</span>
+          <span class="badge" style="background-color:#cbd5e1; color:#475569;">15 min read</span>
+        </div>
+        <h3 class="card-title"><a href="articles/msr-pocketrocket-7724.html" class="article-link">The Making of MSR PocketRocket</a></h3>
+        <div class="card-footer"><a href="articles/msr-pocketrocket-7724.html" class="read-more">Read review &rarr;</a></div>
+      </article>      <article class="article-card">
+        <div class="card-meta">
+          <span class="badge cat" style="background-color:#64748b;">Edc Knife</span>
+          <span class="badge" style="background-color:#cbd5e1; color:#475569;">15 min read</span>
+        </div>
+        <h3 class="card-title"><a href="articles/spyderco-tenacious-6312.html" class="article-link">In Defense of Spyderco Tenacious</a></h3>
+        <div class="card-footer"><a href="articles/spyderco-tenacious-6312.html" class="read-more">Read review &rarr;</a></div>
+      </article>      <article class="article-card">
+        <div class="card-meta">
+          <span class="badge cat" style="background-color:#64748b;">Kitchen Knife</span>
+          <span class="badge" style="background-color:#cbd5e1; color:#475569;">15 min read</span>
+        </div>
+        <h3 class="card-title"><a href="articles/mac-mth-8-3538.html" class="article-link">What Mac MTH-8 Actually Is</a></h3>
+        <div class="card-footer"><a href="articles/mac-mth-8-3538.html" class="read-more">Read review &rarr;</a></div>
+      </article>      <article class="article-card">
+        <div class="card-meta">
+          <span class="badge cat" style="background-color:#64748b;">Cast Iron</span>
+          <span class="badge" style="background-color:#cbd5e1; color:#475569;">15 min read</span>
+        </div>
+        <h3 class="card-title"><a href="articles/lodge-l10sk3-1228.html" class="article-link">On Lodge L10SK3, and What It Says About Us</a></h3>
+        <div class="card-footer"><a href="articles/lodge-l10sk3-1228.html" class="read-more">Read review &rarr;</a></div>
+      </article>      <article class="article-card">
+        <div class="card-meta">
+          <span class="badge cat" style="background-color:#64748b;">Office</span>
+          <span class="badge" style="background-color:#cbd5e1; color:#475569;">15 min read</span>
+        </div>
+        <h3 class="card-title"><a href="articles/autonomous-ergochair-7608.html" class="article-link">I Used to Think Autonomous ErgoChair Was Silly</a></h3>
+        <div class="card-footer"><a href="articles/autonomous-ergochair-7608.html" class="read-more">Read review &rarr;</a></div>
+      </article>      <article class="article-card">
+        <div class="card-meta">
+          <span class="badge cat" style="background-color:#64748b;">Coffee</span>
+          <span class="badge" style="background-color:#cbd5e1; color:#475569;">15 min read</span>
+        </div>
+        <h3 class="card-title"><a href="articles/chemex-2496.html" class="article-link">I Used to Think Chemex Was Silly</a></h3>
+        <div class="card-footer"><a href="articles/chemex-2496.html" class="read-more">Read review &rarr;</a></div>
+      </article>
+    </div>
 
     <!-- Trending Section -->
-        <section id="trending" class="section-header">
+    <section id="trending" class="section-header">
       <h2 class="section-title"><span class="cat-badge">Trending</span>Most Discussed</h2>
       <a href="#" class="view-all">View all &rarr;</a>
     </section>
-    <div class="grid-4">    <article class="article-card">
-      <div class="card-meta">
-        <span class="badge" style="background-color:#cbd5e1; color:#475569;">15 min read</span>
-      </div>
-      <h3 class="card-title"><a href="articles/wusthof-classic-8304.html" class="article-link">On Wusthof Classic, and What It Says About Us</a></h3>
-      <div class="card-footer"><a href="articles/wusthof-classic-8304.html" class="read-more">Read &rarr;</a></div>
-    </article>    <article class="article-card">
-      <div class="card-meta">
-        <span class="badge" style="background-color:#cbd5e1; color:#475569;">15 min read</span>
-      </div>
-      <h3 class="card-title"><a href="articles/glorious-gmmk-pro-7640.html" class="article-link">What Glorious GMMK Pro Has Seen</a></h3>
-      <div class="card-footer"><a href="articles/glorious-gmmk-pro-7640.html" class="read-more">Read &rarr;</a></div>
-    </article>    <article class="article-card">
-      <div class="card-meta">
-        <span class="badge" style="background-color:#cbd5e1; color:#475569;">15 min read</span>
-      </div>
-      <h3 class="card-title"><a href="articles/spyderco-tenacious-6312.html" class="article-link">In Defense of Spyderco Tenacious</a></h3>
-      <div class="card-footer"><a href="articles/spyderco-tenacious-6312.html" class="read-more">Read &rarr;</a></div>
-    </article>    <article class="article-card">
-      <div class="card-meta">
-        <span class="badge" style="background-color:#cbd5e1; color:#475569;">15 min read</span>
-      </div>
-      <h3 class="card-title"><a href="articles/pilot-custom-823-3681.html" class="article-link">I Used to Think Pilot Custom 823 Was Silly</a></h3>
-      <div class="card-footer"><a href="articles/pilot-custom-823-3681.html" class="read-more">Read &rarr;</a></div>
-    </article>    <article class="article-card">
-      <div class="card-meta">
-        <span class="badge" style="background-color:#cbd5e1; color:#475569;">15 min read</span>
-      </div>
-      <h3 class="card-title"><a href="articles/breville-bambino-7619.html" class="article-link">On Breville Bambino, and the Morning</a></h3>
-      <div class="card-footer"><a href="articles/breville-bambino-7619.html" class="read-more">Read &rarr;</a></div>
-    </article>    <article class="article-card">
-      <div class="card-meta">
-        <span class="badge" style="background-color:#cbd5e1; color:#475569;">15 min read</span>
-      </div>
-      <h3 class="card-title"><a href="articles/saatva-classic-2348.html" class="article-link">I Used to Think Saatva Classic Was Silly</a></h3>
-      <div class="card-footer"><a href="articles/saatva-classic-2348.html" class="read-more">Read &rarr;</a></div>
-    </article>    <article class="article-card">
-      <div class="card-meta">
-        <span class="badge" style="background-color:#cbd5e1; color:#475569;">15 min read</span>
-      </div>
-      <h3 class="card-title"><a href="articles/msr-pocketrocket-3798.html" class="article-link">The Quiet Life of MSR PocketRocket</a></h3>
-      <div class="card-footer"><a href="articles/msr-pocketrocket-3798.html" class="read-more">Read &rarr;</a></div>
-    </article>    <article class="article-card">
-      <div class="card-meta">
-        <span class="badge" style="background-color:#cbd5e1; color:#475569;">15 min read</span>
-      </div>
-      <h3 class="card-title"><a href="articles/le-creuset-skillet-4357.html" class="article-link">In Praise of Le Creuset Skillet</a></h3>
-      <div class="card-footer"><a href="articles/le-creuset-skillet-4357.html" class="read-more">Read &rarr;</a></div>
-    </article></div>
-      <h3 class="card-title"><a href="articles/whoop-4.0-4124.html">Whoop 4.0: The real Reddit consensus, explained.</a></h3>
-      <p class="card-excerpt">Community favorite with 2 affiliate links.</p>
-      <div class="card-footer">
-        <span class="card-date">Oct 13</span>
-        <a href="articles/whoop-4.0-4124.html" class="read-more">Read &rarr;</a>
-      </div>
-    </article>
+    <div class="grid-4">
     <article class="article-card">
-      <div class="card-meta">
-        <span class="badge cat" style="background-color:#1a73e8;">Keyboards</span>
-        <span class="badge author" style="background-color:#64748b;">Mac</span>
-      </div>
-      <h3 class="card-title"><a href="articles/new-balance-fuelcell-sc-9767.html">Why I switched from [cheap alternative] to New Balance FuelCell SC.</a></h3>
-      <p class="card-excerpt">Community favorite with 2 affiliate links.</p>
-      <div class="card-footer">
-        <span class="card-date">Oct 16</span>
-        <a href="articles/new-balance-fuelcell-sc-9767.html" class="read-more">Read &rarr;</a>
-      </div>
-    </article>
-    <article class="article-card">
-      <div class="card-meta">
-        <span class="badge cat" style="background-color:#059669;">Outdoor</span>
-        <span class="badge author" style="background-color:#64748b;">Mac</span>
-      </div>
-      <h3 class="card-title"><a href="articles/bosch-universal-plus-7953.html">Thermal profile of Bosch Universal Plus over 21 months: the results.</a></h3>
-      <p class="card-excerpt">Community favorite with 2 affiliate links.</p>
-      <div class="card-footer">
-        <span class="card-date">Oct 16</span>
-        <a href="articles/bosch-universal-plus-7953.html" class="read-more">Read &rarr;</a>
-      </div>
-    </article>
-    <article class="article-card">
-      <div class="card-meta">
-        <span class="badge cat" style="background-color:#7c3aed;">Audio</span>
-        <span class="badge author" style="background-color:#1a73e8;">4080</span>
-      </div>
-      <h3 class="card-title"><a href="articles/yeti-cooler-993.html">Yeti Cooler: The real Reddit consensus, explained.</a></h3>
-      <p class="card-excerpt">Community favorite with 2 affiliate links.</p>
-      <div class="card-footer">
-        <span class="card-date">Oct 13</span>
-        <a href="articles/yeti-cooler-993.html" class="read-more">Read &rarr;</a>
-      </div>
-    </article>
-    <article class="article-card">
-      <div class="card-meta">
-        <span class="badge cat" style="background-color:#7c3aed;">Audio</span>
-        <span class="badge author" style="background-color:#1a73e8;">4080</span>
-      </div>
-      <h3 class="card-title"><a href="articles/lodge-cast-iron-skillet-review.html">Lodge Skillet Review — Why Reddit Won't Shut Up About It</a></h3>
-      <p class="card-excerpt">Community favorite with 4 affiliate links.</p>
-      <div class="card-footer">
-        <span class="card-date">Oct 16</span>
-        <a href="articles/lodge-cast-iron-skillet-review.html" class="read-more">Read &rarr;</a>
-      </div>
-    </article>
-    <article class="article-card">
-      <div class="card-meta">
-        <span class="badge cat" style="background-color:#059669;">Outdoor</span>
-        <span class="badge author" style="background-color:#1a73e8;">4080</span>
-      </div>
-      <h3 class="card-title"><a href="articles/avid-power-1440.html">The Avid Power deep-dive nobody asked for but everyone needs.</a></h3>
-      <p class="card-excerpt">Community favorite with 2 affiliate links.</p>
-      <div class="card-footer">
-        <span class="card-date">Oct 16</span>
-        <a href="articles/avid-power-1440.html" class="read-more">Read &rarr;</a>
-      </div>
-    </article>
-    <article class="article-card">
-      <div class="card-meta">
-        <span class="badge cat" style="background-color:#059669;">Outdoor</span>
-        <span class="badge author" style="background-color:#1a73e8;">4080</span>
-      </div>
-      <h3 class="card-title"><a href="articles/bissell-iconpet-1956.html">Stop buying the wrong vacuum. Bissell IconPet is the answer.</a></h3>
-      <p class="card-excerpt">Community favorite with 2 affiliate links.</p>
-      <div class="card-footer">
-        <span class="card-date">Oct 16</span>
-        <a href="articles/bissell-iconpet-1956.html" class="read-more">Read &rarr;</a>
-      </div>
-    </article>
-    <article class="article-card">
-      <div class="card-meta">
-        <span class="badge cat" style="background-color:#059669;">Outdoor</span>
-        <span class="badge author" style="background-color:#1a73e8;">4080</span>
-      </div>
-      <h3 class="card-title"><a href="articles/milwaukee-48-22-8200-3590.html">Milwaukee 48-22-8200: The real Reddit consensus, explained.</a></h3>
-      <p class="card-excerpt">Community favorite with 2 affiliate links.</p>
-      <div class="card-footer">
-        <span class="card-date">Oct 16</span>
-        <a href="articles/milwaukee-48-22-8200-3590.html" class="read-more">Read &rarr;</a>
-      </div>
-    </article></div>
+        <div class="card-meta">
+          <span class="badge" style="background-color:#cbd5e1; color:#475569;">15 min read</span>
+        </div>
+        <h3 class="card-title"><a href="articles/wusthof-classic-8304.html" class="article-link">On Wusthof Classic, and What It Says About Us</a></h3>
+        <div class="card-footer"><a href="articles/wusthof-classic-8304.html" class="read-more">Read &rarr;</a></div>
+      </article>    <article class="article-card">
+        <div class="card-meta">
+          <span class="badge" style="background-color:#cbd5e1; color:#475569;">15 min read</span>
+        </div>
+        <h3 class="card-title"><a href="articles/glorious-gmmk-pro-7640.html" class="article-link">What Glorious GMMK Pro Has Seen</a></h3>
+        <div class="card-footer"><a href="articles/glorious-gmmk-pro-7640.html" class="read-more">Read &rarr;</a></div>
+      </article>    <article class="article-card">
+        <div class="card-meta">
+          <span class="badge" style="background-color:#cbd5e1; color:#475569;">15 min read</span>
+        </div>
+        <h3 class="card-title"><a href="articles/spyderco-tenacious-6312.html" class="article-link">In Defense of Spyderco Tenacious</a></h3>
+        <div class="card-footer"><a href="articles/spyderco-tenacious-6312.html" class="read-more">Read &rarr;</a></div>
+      </article>    <article class="article-card">
+        <div class="card-meta">
+          <span class="badge" style="background-color:#cbd5e1; color:#475569;">15 min read</span>
+        </div>
+        <h3 class="card-title"><a href="articles/pilot-custom-823-3681.html" class="article-link">I Used to Think Pilot Custom 823 Was Silly</a></h3>
+        <div class="card-footer"><a href="articles/pilot-custom-823-3681.html" class="read-more">Read &rarr;</a></div>
+      </article>    <article class="article-card">
+        <div class="card-meta">
+          <span class="badge" style="background-color:#cbd5e1; color:#475569;">15 min read</span>
+        </div>
+        <h3 class="card-title"><a href="articles/breville-bambino-7619.html" class="article-link">On Breville Bambino, and the Morning</a></h3>
+        <div class="card-footer"><a href="articles/breville-bambino-7619.html" class="read-more">Read &rarr;</a></div>
+      </article>    <article class="article-card">
+        <div class="card-meta">
+          <span class="badge" style="background-color:#cbd5e1; color:#475569;">15 min read</span>
+        </div>
+        <h3 class="card-title"><a href="articles/saatva-classic-2348.html" class="article-link">I Used to Think Saatva Classic Was Silly</a></h3>
+        <div class="card-footer"><a href="articles/saatva-classic-2348.html" class="read-more">Read &rarr;</a></div>
+      </article>    <article class="article-card">
+        <div class="card-meta">
+          <span class="badge" style="background-color:#cbd5e1; color:#475569;">15 min read</span>
+        </div>
+        <h3 class="card-title"><a href="articles/msr-pocketrocket-3798.html" class="article-link">The Quiet Life of MSR PocketRocket</a></h3>
+        <div class="card-footer"><a href="articles/msr-pocketrocket-3798.html" class="read-more">Read &rarr;</a></div>
+      </article>    <article class="article-card">
+        <div class="card-meta">
+          <span class="badge" style="background-color:#cbd5e1; color:#475569;">15 min read</span>
+        </div>
+        <h3 class="card-title"><a href="articles/le-creuset-skillet-4357.html" class="article-link">In Praise of Le Creuset Skillet</a></h3>
+        <div class="card-footer"><a href="articles/le-creuset-skillet-4357.html" class="read-more">Read &rarr;</a></div>
+      </article>
+    </div>
 
     <!-- Category Sections -->
     <section id="categories" class="section-header">
@@ -655,151 +396,100 @@
     </section>
 
     <section class="section-header">
-      <h2 class="section-title"><span class="cat-badge">Outdoor</span>Outdoor</h2>
-      <a href="https://www.amazon.com/s?k=camping+gear&tag=knoxyknoxer-20" target="_blank" rel="noopener" class="view-all" style="background: var(--accent); color: white; padding: 4px 12px; border-radius: 6px;">Buy on Amazon &rarr;</a>
+      <h2 class="section-title"><span class="cat-badge">Fountain Pen</span>Fountain Pen</h2>
     </section>
-    <div class="grid-4">
-        <article class="article-card">
-          <div class="card-meta">
-            <span class="badge author" style="background-color:#1a73e8;">4080</span>
-            <span class="badge" style="background-color:#cbd5e1; color:#475569;">1 min</span>
-          </div>
-          <h3 class="card-title"><a href="articles/hoka-speedgoat-5-6713.html">After 6 months with Hoka Speedgoat 5, here's my honest take.</a></h3>
-          <div class="card-footer">
-            <span class="card-date">Oct 16</span>
-            <a href="articles/hoka-speedgoat-5-6713.html" class="read-more">Read &rarr;</a>
-          </div>
-        </article>
-        <article class="article-card">
-          <div class="card-meta">
-            <span class="badge author" style="background-color:#64748b;">Mac</span>
-            <span class="badge" style="background-color:#cbd5e1; color:#475569;">1 min</span>
-          </div>
-          <h3 class="card-title"><a href="articles/anycubic-photon-d2-4552.html">Stop buying the wrong resin printer. Anycubic Photon D2 is the answer.</a></h3>
-          <div class="card-footer">
-            <span class="card-date">Oct 16</span>
-            <a href="articles/anycubic-photon-d2-4552.html" class="read-more">Read &rarr;</a>
-          </div>
-        </article>
-        <article class="article-card">
-          <div class="card-meta">
-            <span class="badge author" style="background-color:#64748b;">Mac</span>
-            <span class="badge" style="background-color:#cbd5e1; color:#475569;">1 min</span>
-          </div>
-          <h3 class="card-title"><a href="articles/april-dripper-3955.html">My April Dripper review after 12 months of daily use.</a></h3>
-          <div class="card-footer">
-            <span class="card-date">Oct 16</span>
-            <a href="articles/april-dripper-3955.html" class="read-more">Read &rarr;</a>
-          </div>
-        </article>
-        <article class="article-card">
-          <div class="card-meta">
-            <span class="badge author" style="background-color:#1a73e8;">4080</span>
-            <span class="badge" style="background-color:#cbd5e1; color:#475569;">1 min</span>
-          </div>
-          <h3 class="card-title"><a href="articles/leatherman-surge-3259.html">After teardown analysis of Leatherman Surge, here's what the specs reveal.</a></h3>
-          <div class="card-footer">
-            <span class="card-date">Oct 16</span>
-            <a href="articles/leatherman-surge-3259.html" class="read-more">Read &rarr;</a>
-          </div>
+    <div class="grid-4">        <article class="article-card">
+          <h3 class="card-title"><a href="articles/visconti-homo-sapiens-9283.html" class="article-link">In Praise of Visconti Homo Sapiens</a></h3>
+          <div class="card-footer"><a href="articles/visconti-homo-sapiens-9283.html" class="read-more">Read &rarr;</a></div>
+        </article>        <article class="article-card">
+          <h3 class="card-title"><a href="articles/lamy-safari-2693.html" class="article-link">On Lamy Safari, and What It Says About Us</a></h3>
+          <div class="card-footer"><a href="articles/lamy-safari-2693.html" class="read-more">Read &rarr;</a></div>
+        </article>        <article class="article-card">
+          <h3 class="card-title"><a href="articles/pilot-custom-heritage-9866.html" class="article-link">The Making of Pilot Custom Heritage</a></h3>
+          <div class="card-footer"><a href="articles/pilot-custom-heritage-9866.html" class="read-more">Read &rarr;</a></div>
+        </article>        <article class="article-card">
+          <h3 class="card-title"><a href="articles/lamy-safari-3767.html" class="article-link">What Lamy Safari Has Seen</a></h3>
+          <div class="card-footer"><a href="articles/lamy-safari-3767.html" class="read-more">Read &rarr;</a></div>
         </article></div>
     <section class="section-header">
-      <h2 class="section-title"><span class="cat-badge">Keyboards</span>Keyboards</h2>
-      <a href="https://www.amazon.com/s?k=mechanical+keyboard&tag=knoxyknoxer-20" target="_blank" rel="noopener" class="view-all" style="background: var(--accent); color: white; padding: 4px 12px; border-radius: 6px;">Buy on Amazon &rarr;</a>
+      <h2 class="section-title"><span class="cat-badge">Cast Iron</span>Cast Iron</h2>
     </section>
-    <div class="grid-4">
-        <article class="article-card">
-          <div class="card-meta">
-            <span class="badge author" style="background-color:#64748b;">Mac</span>
-            <span class="badge" style="background-color:#cbd5e1; color:#475569;">1 min</span>
-          </div>
-          <h3 class="card-title"><a href="articles/milwaukee-m18-2984.html">Stress tested Milwaukee M18 until failure.</a></h3>
-          <div class="card-footer">
-            <span class="card-date">Oct 16</span>
-            <a href="articles/milwaukee-m18-2984.html" class="read-more">Read &rarr;</a>
-          </div>
-        </article>
-        <article class="article-card">
-          <div class="card-meta">
-            <span class="badge author" style="background-color:#1a73e8;">4080</span>
-            <span class="badge" style="background-color:#cbd5e1; color:#475569;">1 min</span>
-          </div>
-          <h3 class="card-title"><a href="articles/pilot-precise-v5-4353.html">Why I switched from [cheap alternative] to Pilot Precise V5.</a></h3>
-          <div class="card-footer">
-            <span class="card-date">Oct 16</span>
-            <a href="articles/pilot-precise-v5-4353.html" class="read-more">Read &rarr;</a>
-          </div>
-        </article>
-        <article class="article-card">
-          <div class="card-meta">
-            <span class="badge author" style="background-color:#64748b;">Mac</span>
-            <span class="badge" style="background-color:#cbd5e1; color:#475569;">1 min</span>
-          </div>
-          <h3 class="card-title"><a href="articles/new-balance-fuelcell-sc-9767.html">Why I switched from [cheap alternative] to New Balance FuelCell SC.</a></h3>
-          <div class="card-footer">
-            <span class="card-date">Oct 16</span>
-            <a href="articles/new-balance-fuelcell-sc-9767.html" class="read-more">Read &rarr;</a>
-          </div>
-        </article>
-        <article class="article-card">
-          <div class="card-meta">
-            <span class="badge author" style="background-color:#64748b;">Mac</span>
-            <span class="badge" style="background-color:#cbd5e1; color:#475569;">1 min</span>
-          </div>
-          <h3 class="card-title"><a href="articles/minaal-carry-on-3.0-4080.html">Why I switched from [cheap alternative] to Minaal Carry-On 3.0.</a></h3>
-          <div class="card-footer">
-            <span class="card-date">Oct 16</span>
-            <a href="articles/minaal-carry-on-3.0-4080.html" class="read-more">Read &rarr;</a>
-          </div>
+    <div class="grid-4">        <article class="article-card">
+          <h3 class="card-title"><a href="articles/lodge-l10sk3-1228.html" class="article-link">On Lodge L10SK3, and What It Says About Us</a></h3>
+          <div class="card-footer"><a href="articles/lodge-l10sk3-1228.html" class="read-more">Read &rarr;</a></div>
+        </article>        <article class="article-card">
+          <h3 class="card-title"><a href="articles/le-creuset-skillet-4357.html" class="article-link">In Praise of Le Creuset Skillet</a></h3>
+          <div class="card-footer"><a href="articles/le-creuset-skillet-4357.html" class="read-more">Read &rarr;</a></div>
+        </article>        <article class="article-card">
+          <h3 class="card-title"><a href="articles/smithey-no.-10-7379.html" class="article-link">In Defense of Smithey No. 10</a></h3>
+          <div class="card-footer"><a href="articles/smithey-no.-10-7379.html" class="read-more">Read &rarr;</a></div>
+        </article>        <article class="article-card">
+          <h3 class="card-title"><a href="articles/finex-cast-iron-6022.html" class="article-link">I Used to Think Finex Cast Iron Was Silly</a></h3>
+          <div class="card-footer"><a href="articles/finex-cast-iron-6022.html" class="read-more">Read &rarr;</a></div>
+        </article></div>
+    <section class="section-header">
+      <h2 class="section-title"><span class="cat-badge">Mechanical Keyboard</span>Mechanical Keyboard</h2>
+    </section>
+    <div class="grid-4">        <article class="article-card">
+          <h3 class="card-title"><a href="articles/glorious-gmmk-pro-7640.html" class="article-link">What Glorious GMMK Pro Has Seen</a></h3>
+          <div class="card-footer"><a href="articles/glorious-gmmk-pro-7640.html" class="read-more">Read &rarr;</a></div>
+        </article>        <article class="article-card">
+          <h3 class="card-title"><a href="articles/glorious-gmmk-pro-6578.html" class="article-link">The Quiet Life of Glorious GMMK Pro</a></h3>
+          <div class="card-footer"><a href="articles/glorious-gmmk-pro-6578.html" class="read-more">Read &rarr;</a></div>
+        </article>        <article class="article-card">
+          <h3 class="card-title"><a href="articles/keychron-k6-1984.html" class="article-link">On Keychron K6, and What It Says About Us</a></h3>
+          <div class="card-footer"><a href="articles/keychron-k6-1984.html" class="read-more">Read &rarr;</a></div>
+        </article>        <article class="article-card">
+          <h3 class="card-title"><a href="articles/das-keyboard-4-9978.html" class="article-link">On Das Keyboard 4, and What It Says About Us</a></h3>
+          <div class="card-footer"><a href="articles/das-keyboard-4-9978.html" class="read-more">Read &rarr;</a></div>
         </article></div>
     <section class="section-header">
       <h2 class="section-title"><span class="cat-badge">Audio</span>Audio</h2>
-      <a href="https://www.amazon.com/s?k=headphones&tag=knoxyknoxer-20" target="_blank" rel="noopener" class="view-all" style="background: var(--accent); color: white; padding: 4px 12px; border-radius: 6px;">Buy on Amazon &rarr;</a>
     </section>
-    <div class="grid-4">
-        <article class="article-card">
-          <div class="card-meta">
-            <span class="badge author" style="background-color:#1a73e8;">4080</span>
-            <span class="badge" style="background-color:#cbd5e1; color:#475569;">1 min</span>
-          </div>
-          <h3 class="card-title"><a href="articles/manfrotto-190xpro-103.html">The Manfrotto 190XPRO deep-dive nobody asked for but everyone needs.</a></h3>
-          <div class="card-footer">
-            <span class="card-date">Oct 16</span>
-            <a href="articles/manfrotto-190xpro-103.html" class="read-more">Read &rarr;</a>
-          </div>
-        </article>
-        <article class="article-card">
-          <div class="card-meta">
-            <span class="badge author" style="background-color:#1a73e8;">4080</span>
-            <span class="badge" style="background-color:#cbd5e1; color:#475569;">1 min</span>
-          </div>
-          <h3 class="card-title"><a href="articles/audeze-lcd-x-1181.html">Stop buying the wrong headphones. Audeze LCD-X is the answer.</a></h3>
-          <div class="card-footer">
-            <span class="card-date">Oct 16</span>
-            <a href="articles/audeze-lcd-x-1181.html" class="read-more">Read &rarr;</a>
-          </div>
-        </article>
-        <article class="article-card">
-          <div class="card-meta">
-            <span class="badge author" style="background-color:#1a73e8;">4080</span>
-            <span class="badge" style="background-color:#cbd5e1; color:#475569;">1 min</span>
-          </div>
-          <h3 class="card-title"><a href="articles/merkur-34c-3029.html">Thermal profile of Merkur 34C over 12 months: the results.</a></h3>
-          <div class="card-footer">
-            <span class="card-date">Oct 16</span>
-            <a href="articles/merkur-34c-3029.html" class="read-more">Read &rarr;</a>
-          </div>
-        </article>
-        <article class="article-card">
-          <div class="card-meta">
-            <span class="badge author" style="background-color:#1a73e8;">4080</span>
-            <span class="badge" style="background-color:#cbd5e1; color:#475569;">1 min</span>
-          </div>
-          <h3 class="card-title"><a href="articles/rega-planar-3-8141.html">Stop buying the wrong turntable. Rega Planar 3 is the answer.</a></h3>
-          <div class="card-footer">
-            <span class="card-date">Oct 16</span>
-            <a href="articles/rega-planar-3-8141.html" class="read-more">Read &rarr;</a>
-          </div>
+    <div class="grid-4">        <article class="article-card">
+          <h3 class="card-title"><a href="articles/sennheiser-hd650-4713.html" class="article-link">I Used to Think Sennheiser HD650 Was Silly</a></h3>
+          <div class="card-footer"><a href="articles/sennheiser-hd650-4713.html" class="read-more">Read &rarr;</a></div>
+        </article>        <article class="article-card">
+          <h3 class="card-title"><a href="articles/sony-wh-1000xm4-5982.html" class="article-link">The Quiet Life of Sony WH-1000XM4</a></h3>
+          <div class="card-footer"><a href="articles/sony-wh-1000xm4-5982.html" class="read-more">Read &rarr;</a></div>
+        </article>        <article class="article-card">
+          <h3 class="card-title"><a href="articles/audio-technica-ath-m50x-2696.html" class="article-link">On Audio-Technica ATH-M50x, and What It Says About Us</a></h3>
+          <div class="card-footer"><a href="articles/audio-technica-ath-m50x-2696.html" class="read-more">Read &rarr;</a></div>
+        </article>        <article class="article-card">
+          <h3 class="card-title"><a href="articles/sony-wh-1000xm4-5747.html" class="article-link">The Sony WH-1000XM4 and the People Who Use It</a></h3>
+          <div class="card-footer"><a href="articles/sony-wh-1000xm4-5747.html" class="read-more">Read &rarr;</a></div>
+        </article></div>
+    <section class="section-header">
+      <h2 class="section-title"><span class="cat-badge">Camping</span>Camping</h2>
+    </section>
+    <div class="grid-4">        <article class="article-card">
+          <h3 class="card-title"><a href="articles/msr-pocketrocket-7724.html" class="article-link">The Making of MSR PocketRocket</a></h3>
+          <div class="card-footer"><a href="articles/msr-pocketrocket-7724.html" class="read-more">Read &rarr;</a></div>
+        </article>        <article class="article-card">
+          <h3 class="card-title"><a href="articles/yeti-cooler-9172.html" class="article-link">On Yeti Cooler, and What It Says About Us</a></h3>
+          <div class="card-footer"><a href="articles/yeti-cooler-9172.html" class="read-more">Read &rarr;</a></div>
+        </article>        <article class="article-card">
+          <h3 class="card-title"><a href="articles/msr-pocketrocket-3798.html" class="article-link">The Quiet Life of MSR PocketRocket</a></h3>
+          <div class="card-footer"><a href="articles/msr-pocketrocket-3798.html" class="read-more">Read &rarr;</a></div>
+        </article>        <article class="article-card">
+          <h3 class="card-title"><a href="articles/garmin-instinct-6615.html" class="article-link">On Garmin Instinct, and What It Says About Us</a></h3>
+          <div class="card-footer"><a href="articles/garmin-instinct-6615.html" class="read-more">Read &rarr;</a></div>
+        </article></div>
+    <section class="section-header">
+      <h2 class="section-title"><span class="cat-badge">Kitchen Knife</span>Kitchen Knife</h2>
+    </section>
+    <div class="grid-4">        <article class="article-card">
+          <h3 class="card-title"><a href="articles/mac-mth-8-3538.html" class="article-link">What Mac MTH-8 Actually Is</a></h3>
+          <div class="card-footer"><a href="articles/mac-mth-8-3538.html" class="read-more">Read &rarr;</a></div>
+        </article>        <article class="article-card">
+          <h3 class="card-title"><a href="articles/mac-mth-8-5555.html" class="article-link">I Used to Think Mac MTH-8 Was Silly</a></h3>
+          <div class="card-footer"><a href="articles/mac-mth-8-5555.html" class="read-more">Read &rarr;</a></div>
+        </article>        <article class="article-card">
+          <h3 class="card-title"><a href="articles/mercer-genesis-9667.html" class="article-link">What Mercer Genesis Has Seen</a></h3>
+          <div class="card-footer"><a href="articles/mercer-genesis-9667.html" class="read-more">Read &rarr;</a></div>
+        </article>        <article class="article-card">
+          <h3 class="card-title"><a href="articles/shun-classic-5694.html" class="article-link">The Shun Classic and the People Who Use It</a></h3>
+          <div class="card-footer"><a href="articles/shun-classic-5694.html" class="read-more">Read &rarr;</a></div>
         </article></div>
 
     <!-- Rivalry Section -->
