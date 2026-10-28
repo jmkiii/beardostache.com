@@ -1,0 +1,22 @@
+{
+  "product": "Nectar Premier",
+  "niche": "mattress",
+  "subreddit": "mattress",
+  "users": [
+    "u/SleepSeeker",
+    "u/MattressReviewer",
+    "u/RestEasy"
+  ],
+  "release_year": 2022,
+  "specs": {
+    "materials": "aluminum",
+    "warranty": "2-year",
+    "price_usd": "$198"
+  },
+  "reddit_quotes": [
+    "Nectar Premier was one of those things I did not know I needed until I had it.",
+    "I reach for Nectar Premier before I am fully awake. My hand knows where it is.",
+    "The first time I used Nectar Premier, I read the instructions. The fiftieth time, I did not need to."
+  ],
+  "detractor_quote": "I tried to love Nectar Premier. It never felt right in my hand."
+}

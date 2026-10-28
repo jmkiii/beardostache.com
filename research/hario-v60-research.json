@@ -1,0 +1,22 @@
+{
+  "product": "Hario V60",
+  "niche": "coffee",
+  "subreddit": "Coffee",
+  "users": [
+    "u/CoffeeSnob22",
+    "u/BaristaLife",
+    "u/RoastMaster"
+  ],
+  "release_year": 2021,
+  "specs": {
+    "materials": "steel",
+    "warranty": "5-year",
+    "price_usd": "$273"
+  },
+  "reddit_quotes": [
+    "Hario V60 was one of those things I did not know I needed until I had it.",
+    "I reach for Hario V60 before I am fully awake. My hand knows where it is.",
+    "The first time I used Hario V60, I read the instructions. The fiftieth time, I did not need to."
+  ],
+  "detractor_quote": "I tried to love Hario V60. It sits in a drawer now."
+}

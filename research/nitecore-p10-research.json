@@ -1,0 +1,24 @@
+{
+  "product": "Nitecore P10",
+  "niche": "flashlight",
+  "subreddit": "flashlight",
+  "users": [
+    "u/LumenLord",
+    "u/FlashFan",
+    "u/BeamChaser"
+  ],
+  "release_year": 2024,
+  "specs": {
+    "weight": "663g",
+    "materials": "nylon",
+    "warranty": "10-year limited",
+    "price_usd": "$133"
+  },
+  "reddit_quotes": [
+    "I've used Nitecore P10 for 23 months. It just works.",
+    "Nitecore P10 is the kind of thing you don't appreciate until you've used the cheap alternative and regretted it.",
+    "The Nitecore P10 community is split, but the people who actually own them tend to keep them."
+  ],
+  "detractor_quote": "I returned my Nitecore P10 after two weeks. The QC was terrible.",
+  "simulated": true
+}

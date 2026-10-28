@@ -1,0 +1,23 @@
+{
+  "product": "Wusthof Classic",
+  "niche": "kitchen knife",
+  "subreddit": "AskCulinary",
+  "users": [
+    "u/KnifeNerd88",
+    "u/ChefKnifeFan",
+    "u/EdgeMaster"
+  ],
+  "release_year": 2023,
+  "specs": {
+    "weight": "362g",
+    "materials": "aluminum",
+    "warranty": "5-year limited",
+    "price_usd": "$312"
+  },
+  "reddit_quotes": [
+    "I've used Wusthof Classic for 36 months. The build quality is evident the moment you hold it.",
+    "Wusthof Classic is the kind of thing you don't appreciate until you've used the cheap alternative and regretted it.",
+    "The Wusthof Classic community is split, but the people who actually own them tend to keep them."
+  ],
+  "detractor_quote": "I returned my Wusthof Classic after two weeks. The marketing is better than the product."
+}

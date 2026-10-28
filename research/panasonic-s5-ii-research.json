@@ -1,0 +1,23 @@
+{
+  "product": "Panasonic S5 II",
+  "niche": "camera",
+  "subreddit": "photography",
+  "users": [
+    "u/LensLover",
+    "u/ShutterBug",
+    "u/FrameHunter"
+  ],
+  "release_year": 2016,
+  "specs": {
+    "materials": "wood",
+    "warranty": "2-year",
+    "price_usd": "$271"
+  },
+  "reddit_quotes": [
+    "Panasonic S5 II was one of those things I did not know I needed until I had it.",
+    "I reach for Panasonic S5 II before I am fully awake. My hand knows where it is.",
+    "The first time I used Panasonic S5 II, I read the instructions. The fiftieth time, I did not need to."
+  ],
+  "detractor_quote": "I tried to love Panasonic S5 II. The ritual never took hold.",
+  "simulated": true
+}

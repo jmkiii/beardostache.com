@@ -1,0 +1,23 @@
+{
+  "product": "Whoop 4.0",
+  "niche": "fitness",
+  "subreddit": "Fitness",
+  "users": [
+    "u/GymRat",
+    "u/FitnessDad",
+    "u/CardioQueen"
+  ],
+  "release_year": 2020,
+  "specs": {
+    "materials": "ceramic",
+    "warranty": "2-year",
+    "price_usd": "$280"
+  },
+  "reddit_quotes": [
+    "Whoop 4.0 was one of those things I did not know I needed until I had it.",
+    "I reach for Whoop 4.0 before I am fully awake. My hand knows where it is.",
+    "The first time I used Whoop 4.0, I read the instructions. The fiftieth time, I did not need to."
+  ],
+  "detractor_quote": "I tried to love Whoop 4.0. It sits in a drawer now.",
+  "simulated": true
+}

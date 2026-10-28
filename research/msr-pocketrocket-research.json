@@ -1,0 +1,23 @@
+{
+  "product": "MSR PocketRocket",
+  "niche": "camping",
+  "subreddit": "camping",
+  "users": [
+    "u/WildernessUser",
+    "u/CampChef47",
+    "u/TrailBlazer"
+  ],
+  "release_year": 2015,
+  "specs": {
+    "materials": "steel",
+    "warranty": "1-year",
+    "price_usd": "$158"
+  },
+  "reddit_quotes": [
+    "MSR PocketRocket was one of those things I did not know I needed until I had it.",
+    "I reach for MSR PocketRocket before I am fully awake. My hand knows where it is.",
+    "The first time I used MSR PocketRocket, I read the instructions. The fiftieth time, I did not need to."
+  ],
+  "detractor_quote": "I tried to love MSR PocketRocket. It sits in a drawer now.",
+  "simulated": true
+}

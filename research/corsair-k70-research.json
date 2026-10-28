@@ -1,0 +1,23 @@
+{
+  "product": "Corsair K70",
+  "niche": "mechanical keyboard",
+  "subreddit": "MechanicalKeyboards",
+  "users": [
+    "u/BudgetClick",
+    "u/KeyModder",
+    "u/DeskJockey42"
+  ],
+  "release_year": 2023,
+  "specs": {
+    "materials": "leather",
+    "warranty": "2-year",
+    "price_usd": "$257"
+  },
+  "reddit_quotes": [
+    "Corsair K70 was one of those things I did not know I needed until I had it.",
+    "I reach for Corsair K70 before I am fully awake. My hand knows where it is.",
+    "The first time I used Corsair K70, I read the instructions. The fiftieth time, I did not need to."
+  ],
+  "detractor_quote": "I tried to love Corsair K70. It never felt right in my hand.",
+  "simulated": true
+}

@@ -1,0 +1,24 @@
+{
+  "product": "Black Diamond Headlamp",
+  "niche": "camping",
+  "subreddit": "camping",
+  "users": [
+    "u/CampChef47",
+    "u/TrailBlazer",
+    "u/WildernessUser"
+  ],
+  "release_year": 2020,
+  "specs": {
+    "weight": "450g",
+    "materials": "full-grain leather",
+    "warranty": "2-year limited",
+    "price_usd": "$306"
+  },
+  "reddit_quotes": [
+    "I've used Black Diamond Headlamp for 11 months. The build quality is evident the moment you hold it.",
+    "Black Diamond Headlamp is the kind of thing you don't appreciate until you've used the cheap alternative and regretted it.",
+    "The Black Diamond Headlamp community is split, but the people who actually own them tend to keep them."
+  ],
+  "detractor_quote": "I returned my Black Diamond Headlamp after two weeks. The QC was terrible.",
+  "simulated": true
+}

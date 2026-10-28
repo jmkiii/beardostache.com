@@ -1,0 +1,23 @@
+{
+  "product": "Platinum Preppy",
+  "niche": "fountain pen",
+  "subreddit": "fountainpens",
+  "users": [
+    "u/PenNewbie23",
+    "u/Stick",
+    "u/InkStained"
+  ],
+  "release_year": 2015,
+  "specs": {
+    "materials": "steel",
+    "warranty": "10-year",
+    "price_usd": "$338"
+  },
+  "reddit_quotes": [
+    "Platinum Preppy was one of those things I did not know I needed until I had it.",
+    "I reach for Platinum Preppy before I am fully awake. My hand knows where it is.",
+    "The first time I used Platinum Preppy, I read the instructions. The fiftieth time, I did not need to."
+  ],
+  "detractor_quote": "I tried to love Platinum Preppy. It sits in a drawer now.",
+  "simulated": true
+}
