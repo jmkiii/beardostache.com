@@ -1,0 +1,6 @@
+LLM generated ~2766 words from 4080 LM Studio endpoint
+Article: alden-indy-llm-deep.html
+Status: LITERARY — real IronSkillet4080 quote embedded
+Tracking: knoxyknoxer-20
+Amazon: tag present
+File written to: /c/Users/Trey/live-site/articles/
